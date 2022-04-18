@@ -1,5 +1,5 @@
 body{
-    background-color: #C5C4C4;
+    background-color: #C4D3F6;
 }
 .container {
     
@@ -19,7 +19,9 @@ nav{
     align-items: center;
     padding: 0 27px;
     border-radius: 10px;
+    height: 50px;
 }
+
 .logo{
   display: flex;
   align-items: center;
@@ -54,20 +56,53 @@ nav ul li a{
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 50%;
+    width: 700px;
     margin: auto;
     margin-top: 100px;
   }
+  tbody{
+    border-radius: 15px;
+  }
   
+
+  th{
+    background: #6c7ae0;
+    color: #fff;
+  }
+  td{
+    color: #666892;
+    background-color: #fff;
+  }
   td, th {
-    border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 20px;
   }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
+
+  table tr:last-child{
+    border-bottom: 0px;
   }
+  table tr:first-child{
+    border-bottom: 0px;
+  }
+  nav ul li a:hover{
+    color: #5f9ea0;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius:10px;
+    
+}
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
 
   footer {
     position: absolute;
@@ -82,3 +117,51 @@ table {
     justify-content: center;
     align-items: center;
  }
+
+ .svg-inline--fa{
+  display: none;
+ }
+ @media only screen and (max-width: 900px) {
+  table {
+    width: 500px;
+  }
+  nav ul{
+    display: none; 
+}
+.svg-inline--fa{
+  display: block;
+}
+}
+
+@media only screen and (max-width: 700px) {
+  table {
+    width: 400px;
+  }
+  nav ul{
+    display: none; 
+}
+.svg-inline--fa{
+  display: block;
+}
+.container{
+  width: 90%;
+    margin-inline: auto;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  table {
+    margin-top: 20px;
+    width: 200px;
+  }
+  nav ul{
+    display: none; 
+}
+.svg-inline--fa{
+  display: block;
+}
+.container{
+  width: 90%;
+    margin-inline: auto;
+}
+}
