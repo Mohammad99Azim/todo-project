@@ -14,7 +14,7 @@ function myFunction() {
     } else if (gender == "female"){
         alert("hello Ms."+username);
     }else{
-        alert("hello "+username);
+        alert("hello");
     }
   } 
   
